@@ -587,6 +587,14 @@ body._lock {
 	flex-wrap: wrap;
 	align-items: center;
 	margin: 0 -15px 0 -15px;
+	border-bottom: 1px solid #e1e1e1;
+	padding: 0 0 30px 0;
+}
+@media (max-width: 991.98px) {
+	.advantages__row {
+		border-bottom: none;
+		padding: 0 0 0 0;
+	}
 }
 .advantages__item {
 	display: flex;
@@ -620,7 +628,7 @@ body._lock {
 	}
 }
 .advantages__img img {
-	height: 60px;
+	height: 57px;
 }
 @media (max-width: 1199.98px) {
 	.advantages__img img {
@@ -650,5 +658,103 @@ body._lock {
 	.advantages__subtitle {
 		font-size: 13px;
 	}
+}
+/*=======================================*/
+
+/*===============Популярное===============*/
+.header-popular__title {
+	font-size: 24px;
+	font-weight: 700;
+}
+.popular-slider {
+	padding: 40px 0 0 0;
+	margin-bottom: 400px;
+}
+.popular-slider__container {
+	
+}
+.popular-slider .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+	right: 1%;
+}
+.popular-slider .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+	left: 1%;
+}
+.popular-slider .swiper-button-prev::after,
+.popular-slider .swiper-button-next::after {
+  color: #1976D2;
+  font-size: 35px;
+}
+.popular-slider__wrapper {
+	display: flex;
+}
+.popular-slider__item {
+
+}
+.item-popular {
+	
+}
+.item-popular__body {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 0;
+	border: 0.5px solid #eeeeee;
+	padding: 30px 30px;
+	cursor: pointer;
+	box-shadow: 0px 13px 27px 0px rgb(218 218 218 / 25%);
+}
+.item-popular__img {
+	margin: 0 0 20px 0;
+}
+.item-popular__img img {
+	
+}
+.item-popular__title {
+	font-size: 14px;
+	font-weight: 500;
+	margin: 0 0 30px 0;
+	flex: 1 1 auto;
+	line-height: 20px;
+}
+.item-popular__title span {
+	font-weight: 700;
+}
+.item-popular__footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-top: 1px solid #eee;
+	padding-top: 30px;
+}
+.item-popular__name {
+	font-size: 14px;
+	font-weight: 700;
+}
+.item-popular__price {
+	
+	font-weight: 700;
+}
+.header-popular {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 0 30px 0;
+}
+.header-popular__navigation {
+	display: flex;
+	align-items: center;
+}
+.header-popular__prev {
+	cursor: pointer;
+	margin: 0 10px 0 0;
+}
+.header-popular__prev img {
+	width: 38px;
+}
+.header-popular__next {
+	cursor: pointer;
+}
+.header-popular__next img {
+	width: 38px;
 }
 /*=======================================*/
