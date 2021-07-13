@@ -54,7 +54,7 @@ if (iconMenu) {
    });
 }
 
-const swiper = new Swiper('.main-slider__container', {
+var mySwiper = new Swiper('.main-slider__container', {
    slidesPerView: 1,
    spaceBetween: 30,
    loop: true,
@@ -66,5 +66,15 @@ const swiper = new Swiper('.main-slider__container', {
    navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
+   },
+});
+var mySwiper = new Swiper('.popular-slider__container', {
+
+   slidesPerView: 5,
+   spaceBetween: 30,
+   loop: true,
+   navigation: {
+      nextEl: ".header-popular__next",
+      prevEl: ".header-popular__prev",
    },
 });
