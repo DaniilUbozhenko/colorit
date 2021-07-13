@@ -69,10 +69,27 @@ var mySwiper = new Swiper('.main-slider__container', {
    },
 });
 var mySwiper = new Swiper('.popular-slider__container', {
-
-   slidesPerView: 5,
+   slidesPerView: 1,
    spaceBetween: 30,
    loop: true,
+   breakpoints: {
+      1199.98: {
+         slidesPerView: 5,
+         spaceBetween: 30
+      },
+      991.98: {
+         slidesPerView: 4,
+         spaceBetween: 10
+      },
+      767.98: {
+         slidesPerView: 3,
+         spaceBetween: 10
+      },
+      575.98: {
+         slidesPerView: 2,
+         spaceBetween: 10
+      }
+   },
    navigation: {
       nextEl: ".header-popular__next",
       prevEl: ".header-popular__prev",
