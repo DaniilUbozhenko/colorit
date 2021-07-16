@@ -73,9 +73,9 @@ var mySwiper = new Swiper('.popular-slider__container', {
    spaceBetween: 30,
    loop: true,
    breakpoints: {
-      1199.98: {
+      1279.98: {
          slidesPerView: 5,
-         spaceBetween: 30
+         spaceBetween: 10
       },
       991.98: {
          slidesPerView: 4,
