@@ -7,9 +7,6 @@
    <meta name="format-detection" content="telephone=no">
    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
    <link rel="icon" type="image/x-icon" href="img/favicon/favicon.png">
-   <link rel="stylesheet"
-      href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
-   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
    <link rel="stylesheet" href="css/style.css">
    <title>КОЛОРИТ - сервисный центр</title>
 </head>
@@ -25,12 +22,12 @@
                <div class="header__menu menu">
                   <nav class="menu__body">
                      <ul class="menu__list">
-                        <li><a data-goto=".page" href="#" class="menu__link active-link">Главная</a></li>
-                        <li><a data-goto=".page__section_2" href="#about" class="menu__link">О нас</a></li>
-                        <li><a data-goto=".page__section_1" href="#" class="menu__link">Услуги</a></li>
-                        <li><a data-goto=".page__section_2" href="#" class="menu__link">Клиенты</a></li>
-                        <li><a data-goto=".page__section_4" href="#" class="menu__link">Отзывы</a></li>
-                        <li><a data-goto=".page__section_6" href="#" class="menu__link">Контакты</a></li>
+                        <li><a href="#" class="menu__link active-link">Главная</a></li>
+                        <li><a href="#" class="menu__link">Услуги</a></li>
+                        <li><a href="#" class="menu__link">О нас</a></li>
+                        <li><a href="#" class="menu__link">Отзывы</a></li>
+                        <li><a href="#" class="menu__link">FAQ</a></li>
+                        <li><a href="#" class="menu__link">Контакты</a></li>
                      </ul>
                   </nav>
                </div>
@@ -43,10 +40,10 @@
                         <img src="img/icons/telephone.svg" class="social-header__phone" alt="">
                      </a>
                      <a class="social-header__item" href="#">
-                        <img src="img/icons/whatsapp.svg" alt="">
+                        <img src="img/icons/vk.svg" alt="">
                      </a>
                      <a class="social-header__item" href="#">
-                        <img src="img/icons/vk.svg" alt="">
+                        <img src="img/icons/whatsapp.svg" alt="">
                      </a>
                   </div>
                </div>
@@ -57,581 +54,36 @@
          </div>
       </header>
       <main class="page">
-         <div class="main-slider">
-            <!-- Slider main container -->
-            <div class="swiper-container main-slider__container">
-               <!-- Additional required wrapper -->
-               <div class="swiper-wrapper main-slider__wrapper">
-                  <!-- Slides -->
-                  <div class="swiper-slide main-slider__slide1">
-                     <div class="container">
-                        <div class="main-slider__body">
-                           <div class="main-slider__content">
-                              <div class="main-slider__text">
-                                 <div class="main-slider__title">
-                                    Профессиональный ремонт и обслуживание офисной оргтехники в Омске
-                                 </div>
-                                 <div class="main-slider__subtitle">
-                                    Мы собрали все самые нужные услуги в одном месте!
-                                 </div>
-                                 <div class="main-slider__button">
-                                    <a href="#">Посмотреть все услуги</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="main-slider__img main-slider__img1">
-                              <img src="img/image-office.png" alt="">
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="swiper-slide main-slider__slide2">
-                     <div class="container">
-                        <div class="main-slider__body">
-                           <div class="main-slider__content">
-                              <div class="main-slider__text">
-                                 <div class="main-slider__title">
-                                    Требуется заправить много картриджей? Предоставим лучшие цены и условия!
-                                 </div>
-                                 <div class="main-slider__subtitle">
-                                    Мы собрали все самые нужные услуги в одном месте!
-                                 </div>
-                                 <div class="main-slider__button">
-                                    <a href="#">Посмотреть все услуги</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="main-slider__img main-slider__img2">
-                              <img src="img/image-office.png" alt="">
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="swiper-slide main-slider__slide3">
-                     <div class="container">
-                        <div class="main-slider__body">
-                           <div class="main-slider__content">
-                              <div class="main-slider__text">
-                                 <div class="main-slider__title">
-                                    Проведём аудит печатающей техники совершенно бесплатно!
-                                 </div>
-                                 <div class="main-slider__subtitle">
-                                    Мы собрали все самые нужные услуги в одном месте!
-                                 </div>
-                                 <div class="main-slider__button">
-                                    <a href="#">Посмотреть все услуги</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="main-slider__img main-slider__img3">
-                              <img src="img/image-office.png" alt="">
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- If we need pagination -->
-               <div class="swiper-pagination"></div>
-               <!-- If we need navigation buttons -->
-               <div class="swiper-button-prev"></div>
-               <div class="swiper-button-next"></div>
-            </div>
-         </div>
-         <div class="advantages">
+         <section class="block-title">
             <div class="container">
-               <div class="advantages__row">
-                  <div class="advantages__item">
-                     <div class="advantages__img">
-                        <img src="img/free-icon-quality-962832.svg" alt="">
+               <div class="block-title__body">
+                  <div class="block-title__text">
+                     <div class="block-title__title">
+                        <h1>Профессиональный ремонт и обслуживание офисной оргтехники в Омске</h1>
                      </div>
-                     <div class="advantages__text">
-                        <div class="advantages__title">
-                           Качество
-                        </div>
-                        <div class="advantages__subtitle">
-                           Только проверенные расходные материаллы от известных брэндов
-                        </div>
+                     <div class="block-title__subtitle">
+                        <p>Мы собрали все самые нужные услуги в одном месте!</p>
+                     </div>
+                     <div class="block-title__button">
+                        <a href="#">Посмотреть все услуги</a>
                      </div>
                   </div>
-                  <div class="advantages__item">
-                     <div class="advantages__img">
-                        <img src="img/free-icon-medical-history-809915.svg" alt="">
-                     </div>
-                     <div class="advantages__text">
-                        <div class="advantages__title">
-                           Качество
-                        </div>
-                        <div class="advantages__subtitle">
-                           Только проверенные расходные материаллы от известных брэндов
-                        </div>
-                     </div>
-                  </div>
-                  <div class="advantages__item">
-                     <div class="advantages__img">
-                        <img src="img/free-icon-working-hours-2694419.svg" alt="">
-                     </div>
-                     <div class="advantages__text">
-                        <div class="advantages__title">
-                           Качество
-                        </div>
-                        <div class="advantages__subtitle">
-                           Только проверенные расходные материаллы от известных брэндов
-                        </div>
-                     </div>
-                  </div>
-                  <div class="advantages__item">
-                     <div class="advantages__img">
-                        <img src="img/free-icon-location-4874465.svg" alt="">
-                     </div>
-                     <div class="advantages__text">
-                        <div class="advantages__title">
-                           Качество
-                        </div>
-                        <div class="advantages__subtitle">
-                           Только проверенные расходные материаллы от известных брэндов
-                        </div>
-                     </div>
+                  <div class="block-title__img">
+                     <img src="img/main page/orgtekhnika.png" alt="">
                   </div>
                </div>
             </div>
-         </div>
-         <div class="popular-slider">
-            <div class="container">
-               <div class="popular-slider__header header-popular">
-                  <div class="header-popular__title">
-                     Популярное
-                  </div>
-                  <div class="header-popular__navigation">
-                     <div class="header-popular__prev">
-                        <img src="img/icons/left.svg" alt="">
-                     </div>
-                     <div class="header-popular__next">
-                        <img src="img/icons/right.svg" alt="">
-                     </div>
-                  </div>
-               </div>
-               <!-- Slider main container -->
-               <div class="swiper-container popular-slider__container">
-                  <!-- Additional required wrapper -->
-                  <div class="swiper-wrapper popular-slider__wrapper">
-                     <!-- Slides -->
-                     <div class="swiper-slide popular-slider__item item-popular">
-                        <div class="item-popular__body">
-                           <div class="item-popular__img">
-                              <img src="img/TK-1170.jpg" alt="">
-                           </div>
-                           <div class="item-popular__decription">
-                              <div class="item-popular__title">
-                                 Заправка картриджа
-                              </div>
-                              <div class="item-popular__model">
-                                 Kyocera TK-1170
-                              </div>
-                           </div>
-                           <div class="item-popular__footer">
-                              <div class="item-popular__left">
-                                 Цена
-                              </div>
-                              <div class="item-popular__right">
-                                 750
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="swiper-slide popular-slider__item item-popular">
-                        <div class="item-popular__body">
-                           <div class="item-popular__img">
-                              <img src="img/printer_PNG7740.png" alt="">
-                           </div>
-                           <div class="item-popular__decription">
-                              <div class="item-popular__title">
-                                 Техническое обслуживание
-                              </div>
-                              <div class="item-popular__model">
-                                 HP LJ Pro 1120
-                              </div>
-                           </div>
-                           <div class="item-popular__footer">
-                              <div class="item-popular__left">
-                                 Цена
-                              </div>
-                              <div class="item-popular__right">
-                                 750
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="swiper-slide popular-slider__item item-popular">
-                        <div class="item-popular__body">
-                           <div class="item-popular__img">
-                              <img src="img/TK-1170.jpg" alt="">
-                           </div>
-                           <div class="item-popular__decription">
-                              <div class="item-popular__title">
-                                 Заправка картриджа
-                              </div>
-                              <div class="item-popular__model">
-                                 Kyocera TK-1170
-                              </div>
-                           </div>
-                           <div class="item-popular__footer">
-                              <div class="item-popular__left">
-                                 Цена
-                              </div>
-                              <div class="item-popular__right">
-                                 750
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="swiper-slide popular-slider__item item-popular">
-                        <div class="item-popular__body">
-                           <div class="item-popular__img">
-                              <img src="img/1127301_v01_b.jpg" alt="">
-                           </div>
-                           <div class="item-popular__decription">
-                              <div class="item-popular__title">
-                                 Техническое обслуживание
-                              </div>
-                              <div class="item-popular__model">
-                                 Kyocera TK-1170
-                              </div>
-                           </div>
-                           <div class="item-popular__footer">
-                              <div class="item-popular__left">
-                                 Цена
-                              </div>
-                              <div class="item-popular__right">
-                                 750
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="swiper-slide popular-slider__item item-popular">
-                        <div class="item-popular__body">
-                           <div class="item-popular__img">
-                              <img src="img/TK-1170.jpg" alt="">
-                           </div>
-                           <div class="item-popular__decription">
-                              <div class="item-popular__title">
-                                 Заправка картриджа
-                              </div>
-                              <div class="item-popular__model">
-                                 Kyocera TK-1170
-                              </div>
-                           </div>
-                           <div class="item-popular__footer">
-                              <div class="item-popular__left">
-                                 Цена
-                              </div>
-                              <div class="item-popular__right">
-                                 750
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="swiper-slide popular-slider__item item-popular">
-                        <div class="item-popular__body">
-                           <div class="item-popular__img">
-                              <img src="img/TK-1170.jpg" alt="">
-                           </div>
-                           <div class="item-popular__decription">
-                              <div class="item-popular__title">
-                                 Техническое обслуживание
-                              </div>
-                              <div class="item-popular__model">
-                                 Kyocera TK-1170
-                              </div>
-                           </div>
-                           <div class="item-popular__footer">
-                              <div class="item-popular__left">
-                                 Цена
-                              </div>
-                              <div class="item-popular__right">
-                                 750
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="about">
-            <div class="container">
-               <div class="about__title sectiont-title">
-                  О компании
-               </div>
-               <div class="about__body">
-                  <div class="about__row">
-                     <div class="about__text">
-                        <p>
-                           Компания «Мега-Заправка» была основана в 2009 году, как сервисный центр по
-                           восстановлению
-                           и заправке лазерных принтеров. За долгие годы работы на рынке, специалисты нашей
-                           компании
-                           приобрели большой опыт, который помогает решать даже самые серьезные проблемы. Каждый
-                           специалист, который является частью нашей слаженной команды, обладает необходимыми
-                           профессиональными навыками, а так же знаниями особенностей функционирования и
-                           обслуживания
-                           различных моделей принтеров.
-                        </p>
-                        <p>
-                           Мы уверены, что решение воспользоваться услугами нашей компании будет выгодным для тех,
-                           кто ценит качество, время и деньги. Оформляя заказ, Вы можете рассчитывать на быстрый
-                           выезд мастера на объект, предоставление консультации, выполнение всех работ с гарантией
-                           высокого качества по лучшей цене. По желанию Заказчика, картриджи могут заправляться,
-                           как
-                           в день заказа прямо на месте (при наличии свободных специалистов, работа занимает около
-                           15 минут), так и на следующий день.
-                        </p>
-                        <p>
-                           Мы уверены, что решение воспользоваться услугами нашей компании будет выгодным для тех,
-                           кто ценит качество, время и деньги. Оформляя заказ, Вы можете рассчитывать на быстрый
-                           выезд мастера на объект, предоставление консультации, выполнение всех работ с гарантией
-                           высокого качества по лучшей цене. По желанию Заказчика.
-                        </p>
-                     </div>
-                     <div class="about__video">
-                        <div class="block__video">
-                           <!-- Overview Thumb -->
-                           <div class="about-thumb bg-overlay overflow-hidden border">
-                              <!-- Play Button -->
-                              <a class="play-btn" data-fancybox href="https://www.youtube.com/watch?v=kFz9WxTsSFU">
-                                 <div class="btn-circle play-animation"></div>
-                                 <div class="btn-circle play-animation animation-short"></div>
-                                 <!-- Play Icon -->
-                                 <div class="play-icon">
-                                    <img src="img/icons/play-button.svg" width="20" alt="">
-                                 </div>
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="services">
-            <div class="container">
-               <div class="services__title">
-                  Наши услуги
-               </div>
-               <div class="services__body">
-                  <div class="post-wrap">
-                     <div class="post-item">
-                        <div class="item-content">
-                           <div class="item-icon group">
-                              <img src="img/ink.svg" height="60" alt="">
-                           </div>
-                           <div class="item-body">
-                              <h3>Заправка картриджей</h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat a quam non
-                                 blandit.</p>
-                           </div>
-                           <div class="item-footer">
-                              <a href="#" class="link"><span>Подробнее</span></a>
-                           </div>
-                        </div>
-                     </div>
-
-                     <div class="post-item">
-                        <div class="item-content">
-                           <div class="item-icon tree">
-                              <img src="img/rem.svg" height="60" alt="">
-                           </div>
-                           <div class="item-body">
-                              <h3>Ремонт принтеров и МФУ</h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat a quam non
-                                 blandit.</p>
-                           </div>
-                           <div class="item-footer">
-                              <a href="#" class="link"><span>Подробнее</span></a>
-                           </div>
-                        </div>
-                     </div>
-
-                     <div class="post-item">
-                        <div class="item-content">
-                           <div class="item-icon anchor">
-                              <img src="img/pc.svg" height="60" alt="">
-                           </div>
-                           <div class="item-body">
-                              <h3>IT-аутсорсинг</h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat a quam non
-                                 blandit.</p>
-                           </div>
-                           <div class="item-footer">
-                              <a href="#" class="link"><span>Подробнее</span></a>
-                           </div>
-                        </div>
-                     </div>
-
-                     <div class="post-item">
-                        <div class="item-content">
-                           <div class="item-icon video">
-                              <img src="img/document.svg" height="60" alt="">
-                           </div>
-                           <div class="item-body">
-                              <h3>Покопийное обслуживание</h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat a quam non
-                                 blandit.</p>
-                           </div>
-                           <div class="item-footer">
-                              <a href="#" class="link"><span>Подробнее</span></a>
-                           </div>
-                        </div>
-                     </div>
-
-                     <div class="post-item">
-                        <div class="item-content">
-                           <div class="item-icon photo">
-                              <img src="img/laptop.svg" height="60" alt="">
-                           </div>
-                           <div class="item-body">
-                              <h3>Ремонт ноутбуков</h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat a quam non
-                                 blandit.</p>
-                           </div>
-                           <div class="item-footer">
-                              <a href="#" class="link"><span>Подробнее</span></a>
-                           </div>
-                        </div>
-                     </div>
-
-                     <div class="post-item">
-                        <div class="item-content">
-                           <div class="item-icon gift">
-                              <img src="img/box.svg" height="60" alt="">
-                           </div>
-                           <div class="item-body">
-                              <h3>Поставка оборудования</h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat a quam non
-                                 blandit.</p>
-                           </div>
-                           <div class="item-footer">
-                              <a href="#" class="link"><span>Подробнее</span></a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="clients">
-            <div class="container">
-               <div class="clients__title">
-                  Клиенты
-               </div>
-               <div class="clients__body">
-                  <div class="clients__row">
-                     <div class="clients__item">
-                        <img src="img/clients/omskdisel.png" alt="">
-                     </div>
-                     <div class="clients__item">
-                        <img src="img/clients/parfum.png" alt="">
-                     </div>
-                     <div class="clients__item">
-                        <img src="img/clients/roslombard.png" alt="">
-                     </div>
-                     <div class="clients__item">
-                        <img src="img/clients/boldetaly.png" alt="">
-                     </div>
-                     <div class="clients__item">
-                        <img src="img/clients/spartamed.png" alt="">
-                     </div>
-                     <div class="clients__item">
-                        <img src="img/clients/laminpak.png" alt="">
-                     </div>
-                     <div class="clients__item">
-                        <img src="img/clients/microgen.png" alt="">
-                     </div>
-                     <div class="clients__item">
-                        <img src="img/clients/vektor.png" alt="">
-                     </div>
-                     <div class="clients__item">
-                        <img src="img/clients/inoil.png" alt="">
-                     </div>
-                     <div class="clients__item">
-                        <img src="img/clients/stargorod.png" alt="">
-                     </div>
-                     <div class="clients__item">
-                        <img src="img/clients/ocean.png" alt="">
-                     </div>
-                     <div class="clients__item">
-                        <img src="img/clients/ledon.png" alt="">
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="reviews">
-            <div class="container">
-               <div class="reviews__title">
-                  Отзывы
-               </div>
-               <div class="reviews-slider">
-                  <!-- Slider main container -->
-                  <div class="swiper-container reviews-slider__container">
-                     <!-- Additional required wrapper -->
-                     <div class="swiper-wrapper reviews-slider__wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide reviews-slide">
-                           <div class="reviews-slide__body">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore architecto
-                              eligendi eaque ipsum iusto fugiat molestias, magni incidunt, exercitationem commodi at et
-                              sed corporis! Corrupti, illum iusto molestias ullam aut eveniet tenetur id architecto in
-                              odit! Saepe reprehenderit consequatur quos, natus voluptatibus explicabo perspiciatis quae
-                              accusamus animi error dignissimos voluptatum voluptate.
-                           </div>
-                        </div>
-                        <div class="swiper-slide reviews-slide">
-                           <div class="reviews-slide__body">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore architecto
-                              eligendi eaque ipsum iusto fugiat molestias, magni incidunt, exercitationem commodi at et
-                              sed corporis! Corrupti, illum iusto molestias ullam aut eveniet tenetur id architecto in
-                              odit! Saepe reprehenderit consequatur quos, natus voluptatibus explicabo perspiciatis quae
-                              accusamus animi error dignissimos voluptatum voluptate.
-                              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, doloribus!
-                           </div>
-                        </div>
-                        <div class="swiper-slide reviews-slide">
-                           <div class="reviews-slide__body">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore architecto
-                              eligendi eaque ipsum iusto fugiat molestias, magni incidunt, exercitationem commodi at et
-                              sed corporis! Corrupti, illum iusto molestias ullam aut eveniet tenetur id architecto in
-                              odit! Saepe reprehenderit consequatur quos, natus voluptatibus explicabo perspiciatis quae
-                              accusamus animi error dignissimos voluptatum voluptate.
-                           </div>
-                        </div>
-                        <div class="swiper-slide reviews-slide">
-                           <div class="reviews-slide__body">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore architecto
-                              eligendi eaque ipsum iusto fugiat molestias, magni incidunt, exercitationem commodi at et
-                              sed corporis! Corrupti, illum iusto molestias ullam aut eveniet tenetur id architecto in
-                              odit! Saepe reprehenderit consequatur quos, natus voluptatibus explicabo perspiciatis quae
-                              accusamus animi error dignissimos voluptatum voluptate.
-                           </div>
-                        </div>
-                     </div>
-                     <!-- If we need pagination -->
-                     <div class="swiper-pagination reviews-pagination"></div>
-                  </div>
-               </div>
-            </div>
-         </div>
+         </section>
       </main>
-      <footer>
-         <div class="container">
-            footer
-         </div>
+      <footer class="footer">
+         footer
       </footer>
    </div>
 
 
 
-   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-   <script src="js/scrollreveal.min.js"></script>
+
+
    <script src="js/script.js"></script>
 </body>
 
