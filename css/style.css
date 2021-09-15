@@ -389,7 +389,7 @@ body._lock {
 	display: inline-flex;
 	align-items: center;
 	font-size: 18px;
-	font-weight: 600;
+	font-weight: 700;
 	letter-spacing: 0.5px;
 	padding: 12px 30px;
 	color: #212121;
@@ -492,6 +492,12 @@ body._lock {
 	}
 }
 @media (max-width: 575.98px) {
+	.header__logo img {
+		width: 130px;
+	}
+	.social-header__item img {
+		width: 22px;
+	}
 	.block-title__body {
 		flex-direction: column;
 		min-height: 500px;
