@@ -1,55 +1,34 @@
-"use strict"
+// When the user scrolls the page, execute myFunction
+window.onscroll = function () { myFunction() };
 
-const isMobile = {
-   Android: function () {
-      return navigator.userAgent.match(/Android/i);
-   },
-   BlackBerry: function () {
-      return navigator.userAgent.match(/BlackBerry/i);
-   },
-   iOS: function () {
-      return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-   },
-   Opera: function () {
-      return navigator.userAgent.match(/Opera Mini/i);
-   },
-   Windows: function () {
-      return navigator.userAgent.match(/IEMobile/i);
-   },
-   any: function () {
-      return (
-         isMobile.Android() ||
-         isMobile.BlackBerry() ||
-         isMobile.iOS() ||
-         isMobile.Opera() ||
-         isMobile.Windows());
-   }
-};
+// Get the navbar
+var navbar = document.getElementById("navbar");
 
-if (isMobile.any()) {
-   document.body.classList.add('_touch');
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
 
-   let menuArrows = document.querySelectorAll('.menu__arrow');
-   if (menuArrows.length > 0) {
-      for (let index = 0; index < menuArrows.length; index++) {
-         const menuArrow = menuArrows[index];
-         menuArrow.addEventListener("click", function (e) {
-            menuArrow.parentElement.classList.toggle('_active');
-         });
-      }
-   }
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+	if (window.innerWidth <= 767.98) {
 
-} else {
-   document.body.classList.add('_pc');
+	}
+	else if (window.pageYOffset >= sticky) {
+		navbar.classList.add("sticky");
+	}
+	else {
+		navbar.classList.remove("sticky");
+	}
 }
+
+
 
 // Меню бургер
 const iconMenu = document.querySelector('.menu__icon');
-const menuBody = document.querySelector('.menu__body');
+const menuBody = document.querySelector('.top-menu__body',);
 if (iconMenu) {
-   iconMenu.addEventListener("click", function (e) {
-      document.body.classList.toggle('_lock');
-      iconMenu.classList.toggle('_active');
-      menuBody.classList.toggle('_active');
-   });
+	iconMenu.addEventListener("click", function (e) {
+		document.body.classList.toggle('_lock');
+		iconMenu.classList.toggle('_active');
+		menuBody.classList.toggle('_active');
+	});
 }
