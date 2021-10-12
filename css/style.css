@@ -113,6 +113,16 @@ body._lock {
 	font-size: 28px;
 	font-weight: 700;
 }
+@media (max-width: 991.98px) {
+	.section-title {
+		margin: 0 0 30px 0;
+	}
+}
+@media (max-width: 575.98px) {
+	.section-title {
+		margin: 0 0 20px 0;
+	}
+}
 /*=====================================================================*/
 
 /*==============================Шапка сайта==============================*/
@@ -553,11 +563,10 @@ body._lock {
 
 }
 .item-advantages__title {
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: 600;
-	text-transform: uppercase;
-	margin: 0 0 7px 0;
-	line-height: 130%;
+	margin: 0 0 5px 0;
+	line-height: 120%;
 }
 .item-advantages__info {
 	font-size: 14px;
@@ -598,13 +607,13 @@ body._lock {
 
 /*==============================Услуги==============================*/
 .services-block {
-	padding: 100px 0 100px 0;
+	padding: 100px 0 50px 0;
 }
 .services-block__body {
 	display: flex;
 	align-items: flex-start;
 	margin: 0 -15px 0 -15px;
-	padding: 15px 0 15px 0;
+	padding: 10px 0 10px 0;
 }
 .item-services {
 	padding: 0 15px 0 15px;
@@ -642,22 +651,36 @@ body._lock {
 	font-size: 15px;
 	font-weight: 600;
 	color: #212121;
+	display: inline-block;
+}
+._icon-right::after {
+	font-size: 20px;
+	padding-left: .05rem;
+    font-size: .85rem;
+    font-weight: 400;
+    vertical-align: -2px;
+    margin-right: -.25rem;
+    display: inline-block;
+	 transition: all 0.3s ease 0s;
+}
+.link-yellow {
+	color: #fab758;
+}
+.link-red {
+	color: #e2626b;
+}
+.link-green {
+	color: #6bbea3
+}
+.link-blue {
+	color: #3f78e0;
 }
 .link-yellow, .link-red, .link-green, .link-blue {
-	transition: 0.3s ease 0s;
+	transition: color 0.3s ease 0s;
 }
 @media (min-width: 768px) {
-	.link-yellow:hover {
-		color: #fab758;
-	}
-	.link-red:hover {
-		color: #e2626b;
-	}
-	.link-green:hover {
-		color: #6bbea3
-	}
-	.link-blue:hover {
-		color: #3f78e0;
+	.item-services__more:hover._icon-right::after {
+		transform: translateX(5px);
 	}
 }
 @media (min-width: 992px) {
@@ -677,6 +700,9 @@ body._lock {
 	}
 }
 @media (max-width: 991.98px) {
+	.services-block {
+		padding: 70px 0 40px 0;
+	}
 	.services-block__body {
 		flex-wrap: wrap;
 	}
@@ -698,6 +724,198 @@ body._lock {
 	.item-services {
 		flex: 0 1 100%;
 		padding: 15px 10px 15px 10px;
+	}
+	.services-block {
+		padding: 60px 0 30px 0;
+	}
+}
+/*=====================================================================*/
+
+/*==============================О компании==============================*/
+.about-block {
+	padding: 100px 0 50px 0;
+}
+.about-block__body {
+	display: flex;
+}
+.text-about {
+	flex: 0 1 60%;
+	padding: 0 20px 0 0;
+}
+.text-about__text {
+	margin: 0 0 40px 0;
+	line-height: 120%;
+}
+.facts-about {
+	display: flex;
+	align-items: flex-start;
+	margin: 0 -15px 0 -15px;
+}
+.facts-item {
+	display: flex;
+	flex-direction: column;
+	flex: 0 1 33.333%;
+	padding: 0 15px 0 15px;
+}
+.facts-item__number {
+	font-size: 46px;
+	font-weight: 600;
+	margin: 0 0 20px 0;
+}
+.facts-item__text {
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 120%;
+	
+}
+.video-about {
+	flex: 0 1 40%;
+	padding: 0 0 0 20px;
+}
+.video-about__thumb {
+	height: 100%;
+	width: 100%;
+	min-height: 300px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0) url("../img/main-page/about.jpg") no-repeat scroll center center / cover;
+}
+.bg-overlay {
+	position: relative;
+	z-index: 0;
+}
+.bg-overlay::after {
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 100%;
+	background-color: #212121;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0.7;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+	z-index: -1;
+}
+.play-btn {
+	position: relative;
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+.btn-circle {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+.play-icon {
+	position: absolute;
+	top: 50%;
+	left: 53%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.play-icon img {
+	width: 20px;
+}
+@-webkit-keyframes grow {
+	from {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		opacity: 1;
+	}
+
+	to {
+		-webkit-transform: scale(1.5);
+		transform: scale(1.5);
+		opacity: 0;
+	}
+}
+@keyframes grow {
+	from {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		opacity: 1;
+	}
+
+	to {
+		-webkit-transform: scale(1.5);
+		transform: scale(1.5);
+		opacity: 0;
+	}
+}
+.play-animation {
+	-webkit-animation: grow 3s infinite;
+	animation: grow 3s infinite;
+}
+.animation-short {
+	-webkit-animation-delay: .3s;
+	animation-delay: .3s;
+}
+@media (max-width: 1199.98px) {
+	.text-about {
+		flex: 0 1 55%;
+	}
+	.video-about {
+		flex: 0 1 45%;
+	}
+}
+@media (max-width: 991.98px) {
+	.about-block {
+		padding: 30px 0 40px 0;
+	}
+	.about-block__body {
+		flex-wrap: wrap;
+	}
+	.facts-item {
+		align-items: center;
+	}
+	.facts-item__text {
+		text-align: center;
+		max-width: 210px;
+	}
+	.text-about {
+		flex: 0 1 100%;
+		padding: 0;
+		margin: 0 0 50px 0;
+	}
+	.video-about {
+		flex: 0 1 500px;
+		margin: 0 auto;
+		padding: 0;
+	}
+}
+@media (max-width: 575.98px) {
+	.about-block {
+		padding: 30px 0 30px 0;
+	}
+}
+@media (max-width: 424.98px) {
+	.facts-about {
+		flex-wrap: wrap;
+	}
+	.facts-item {
+		flex: 0 1 100%;
+		margin: 0 0 20px 0;
+	}
+	.facts-item:last-child {
+		margin: 0 0 0 0;
 	}
 }
 /*=====================================================================*/
